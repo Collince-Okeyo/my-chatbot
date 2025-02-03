@@ -9,7 +9,7 @@ const Chatbot = () => {
   const handleChat = async () => {
     if (!inputText.trim()) return;
 
-    const client = new HfInference(""); // Replace with your API key
+    const client = new HfInference("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"); // Replace with your API key
     const userMessage = { sender: "user", text: inputText };
 
     // Add user message to the chat log
@@ -18,7 +18,7 @@ const Chatbot = () => {
 
     try {
       const output = await client.textGeneration({
-        model: "", // Replace with your desired model
+        model: "facebook/blenderbot-400M-distill", // Replace with your desired model
         inputs: inputText,
       });
 
