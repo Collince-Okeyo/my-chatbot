@@ -18,7 +18,7 @@ const Chatbot = () => {
 
     try {
       const output = await client.textGeneration({
-        model: "facebook/blenderbot-400M-distill", // Replace with your desired model
+        model: "", // Replace with your desired model
         inputs: inputText,
       });
 
