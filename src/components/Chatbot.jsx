@@ -9,7 +9,7 @@ const Chatbot = () => {
   const handleChat = async () => {
     if (!inputText.trim()) return;
 
-    const client = new HfInference("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"); // Replace with your API key
+    const client = new HfInference(""); // Replace with your API key
     const userMessage = { sender: "user", text: inputText };
 
     // Add user message to the chat log
