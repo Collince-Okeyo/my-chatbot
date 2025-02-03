@@ -1,5 +1,6 @@
 import React from 'react'
 import Chatbot from './components/Chatbot'
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
