@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HfInference } from "@huggingface/inference";
 import './Chatbot.css'
-import { Analytics } from "@vercel/analytics/react"
+// import { Analytics } from "@vercel/analytics/react"
 
 const Chatbot = () => {
   const [inputText, setInputText] = useState("");
